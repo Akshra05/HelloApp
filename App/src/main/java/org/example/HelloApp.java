@@ -2,19 +2,12 @@ package org.example;
 
 public class HelloApp {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<String>();
+        System.out.println("Enter name to remove:");
+        String removeName = sc.nextLine();
 
-        System.out.println("How many names do you want to store?");
-        int n = sc.nextInt();
-        sc.nextLine();
+        names.remove(removeName);
 
-        for(int i = 0; i < n; i++) {
-            System.out.println("Enter name:");
-            String name2 = sc.nextLine();
-            names.add(name2);
-        }
-
-        System.out.println("Names stored in memory:");
+        System.out.println("Updated names:");
         for(int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }
