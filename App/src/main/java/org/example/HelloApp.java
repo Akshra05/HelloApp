@@ -2,11 +2,8 @@ package org.example;
 
 public class HelloApp {
     public static void main(String[] args) {
-        if(args.length > 0) {
-            for(int i = 0; i < args.length; i++) {
-                System.out.println("Hello " + args[i]);
-            }
-        }
-
+        System.out.println("Enter your name:");
+        String nameInput = sc.nextLine();
+        System.out.println("Hello " + nameInput);
     }
 }
